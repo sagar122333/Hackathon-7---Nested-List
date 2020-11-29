@@ -5,7 +5,7 @@ function State(props){
     const[city, setCity]=useState(false);
     
     return(
-        <li id={"state"+state.idx} onClick={()=>setCity(true)}>
+        <li id={"state"+(props.idx+1)} onClick={()=>setCity(true)}>
             {state.name}
             <ul>{city?
                 state.cities.map((city, index) => (

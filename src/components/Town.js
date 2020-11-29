@@ -4,7 +4,7 @@ function Town(props){
     const town = props.town;
     
     return(
-        <li id={"town"+town.idx}>{town.name}</li>
+        <li id={"town"+(props.idx+1)}>{town.name}</li>
     )
 }
 export default Town;
