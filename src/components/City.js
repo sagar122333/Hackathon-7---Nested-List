@@ -5,8 +5,8 @@ function City(props){
     const[town, setTown]=useState(false);
     
     return(
-        <li id={"city"+(props.idx+1)} onClick={()=>setTown(true)}>
-            {city.name}
+        <li><span id={"city"+(props.idx+1)} onClick={()=>setTown(!town)}>
+            {city.name}</span>
             <ul>{town?
                 city.towns.map((town, index) => (
                     <Town key={town.name+town.key} idx={index} town={town}/>
