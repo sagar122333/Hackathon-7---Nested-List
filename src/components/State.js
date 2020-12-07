@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import City from "./city";
+import City from "./City";
 function State(props){
     const state = props.state;
     const[city, setCity]=useState(false);
